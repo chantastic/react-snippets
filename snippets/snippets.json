@@ -1,1 +1,102 @@
-{}
+{
+	"Component Class": {
+		"prefix": "ComponentClass",
+		"body": [
+			"class ${1:ComponentName} extends ${2|React.Component,Copmonent|} {",
+			"\trender() {",
+			"\t\treturn (",
+			"\t\t\t${0:<div />}",
+			"\t\t);",
+			"\t}",
+			"}"
+		]
+	},
+
+	"Component Function": {
+		"prefix": "CopmonentFunction",
+		"body": [
+			"const ${1:ComponentName} = ${2|props,({...props}),(props\\, context)|} => (",
+			"\t${0:<div {...props\\} />}",
+			")"
+		]
+	},
+
+	"Component constructor": {
+		"prefix": "constructor",
+		"body": [
+			"constructor(props) {",
+			"\tsuper(props);$0",
+			"}"
+		]
+	},
+
+	"componentWillMount": {
+		"prefix": "componentWillMount",
+		"body": [
+			"componentWillMount() {",
+			"\t$0",
+			"}"
+		]
+	},
+
+	"componentDidMount": {
+		"prefix": "componentDidMount",
+		"body": [
+			"componentDidMount() {",
+			"\t$0",
+			"}"
+		]
+	},
+
+	"componentWillReceiveProps": {
+		"prefix": "componentWillReceiveProps",
+		"body": [
+			"componentWillReceiveProps(${1:nextProps}) {"
+			"\t$0",
+			"}"
+		]
+	},
+	
+	"shouldComponentUpdate": {
+		"prefix": "shouldComponentUpdate",
+		"body": [
+			"shouldComponentUpdate(${1|nextProps,nextProps\\, nextState,_\\, nextState|}) {",
+			"\t$0",
+			"}"
+		]
+	},
+	
+	"componentWillUpdate": {
+		"prefix": "componentWillUpdate",
+		"body": [
+			"componentWillUpdate(${1|nextProps,nextProps\\, nextState,_\\, nextState|}) {",
+			"\t$0",
+			"}"
+		]
+	},
+	
+	"componentDidUpdate": {
+		"prefix": "componentDidUpdate",
+		"body": "componentDidUpdate(${1|nextProps,nextProps\\, nextState,_\\, nextState|}) {\n\t$0\n}",
+	},
+	
+	"componentWillUnmount": {
+		"prefix": "componentWillUnmount",
+		"body": [
+			"componentWillUnmount() {"
+			"\t$0",
+			"}"
+		]
+	},
+	
+	"render": {
+		"prefix": "render",
+		"body": [
+			"render() {",
+			"\treturn (",
+			"\t\t${0:<div />}",
+			"\t);",
+			"}"
+		]
+	}
+}
