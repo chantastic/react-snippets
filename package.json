@@ -1,0 +1,21 @@
+{
+    "name": "react-snippets",
+    "displayName": "react-snippets",
+    "description": "Sane snippets for React",
+    "version": "0.0.1",
+    "publisher": "chantastic",
+    "engines": {
+        "vscode": "^1.15.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
